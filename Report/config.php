@@ -1,5 +1,6 @@
 <?php
-  $servidor = "localhost";
+  $servidor = "www.sixtemakgis.com";
+  //$servidor = "localhost";
   $usuario = "sixtemak_desarrollo";
   $pass = "topacio310571";
   $db = "sixtemak_vivemas";
