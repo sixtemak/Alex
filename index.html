@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conexion a Mysql</title>
+</head>
+<body>
+  <h1>Usuarios desde la Base de Datos</h1>
+  <ul id="usuarios"</ul>
+
+  <script>
+    fetch('http://localhost:3000/usuarios')
+    .then(response => response.json())
+    .then(data => {
+      const usuariosList = document.getElementById('usuarios');
+      data.forEach(usuario => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `Nombre: ${usuarios.usuario}, Contrasena: ${usuarios.contrasena}`;
+        usuariosList.appendChild(listItem);
+      });
+    })
+    .catch(err => console.log('Error data', error));
+  </script>
+
+</body>
+</html>
